@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Betting</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!--fontawesome is to get icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link href="css/index.css" rel="stylesheet">
+  <style>
+    footer{
+            background-color:#ccc;
+            text-align:center;
+            padding:25px;
+            font-size:18px;
+        }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="row text-center">
+          <h1> <i class="fab fa-btc"></i>ETTING GAME</h1>
+          <!--<h3>(Không giàu đừng về)</h3>-->
+        </div>
+        <hr />
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card-counter player">
+                <i class="fa fa-users"></i>
+                <span class="count-numbers" id="total-slots"></span>
+                <span class="count-name"> All Slots</span>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-counter last-winner">
+                <i class="fa fa-trophy"></i>
+                <span class="count-numbers" id="last-winner-number"></span>
+                <span class="count-name">Last Win Number</span>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-counter bet-value">
+                <i class="fa fa-ticket-alt"></i>
+                <span class="count-numbers" id="number-of-bets"></span>
+                <span class="count-name">Number of Bets</span>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-counter total-bet">
+                <i class="fab fa-ethereum"></i>
+                <span class="count-numbers" id="total-bet"></span>
+                <span class="count-name">Total Betted</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <h3 class="text-center"><span class = "fab fa-accessible-icon"></span>Không giàu không về (Price: 1 ETH/Turn)</h3>
+        </br>
+        </br>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">0</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">1</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">2</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">3</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">4</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">5</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">6</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">7</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">8</button>
+        <button type="button" class="btn bet-number btn-danger btn-circle btn-xl">9</button>
+
+        <hr />
+
+        <div class="row text-center">
+          <h4>Your account: <span id='coinbase'></span></h4>
+        </div>
+
+        <div class="col-xs-6 col-xs-offset-3 column margintop20 text-center">
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#"><span class="fa fa-gamepad"></span> Current Game</a></li>
+            <li><a href="#"><span class="fas fa-grin-tears"></span> <span id='player1'>Player 1</span></a></li>
+            <li><a href="#"><span class="fas fa-grin-tears"></span> <span id='player2'>Player 2</span></a></li>
+            <li><a href="#"><span class="fas fa-grin-tears"></span> <span id='player3'>Player 3</span></a></li>
+            <li><a href="#"><span class="fas fa-grin-tears"></span> <span id='player4'>Player 4</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>@2019</div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
