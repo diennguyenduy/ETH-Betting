@@ -14,22 +14,22 @@ https://metamask.io/
 
 3, install lite-server
 Open terminal on your IDE and run:
-+ npm init -y
-+ npm install lite-server
++ `npm init -y`
++ `npm install lite-server`
 
 config bs-config.json
-
+`
 {
     "server": {
       "baseDir": ["./src"]
     }
 }
-
+`
 config package.json
-
+`
 "scripts": {
     "dev": "lite-server",
-
+`
 
 4, open App: 
 run `npm run dev` and relax XD 
